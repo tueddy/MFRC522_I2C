@@ -379,11 +379,11 @@ public:
 	byte PCD_MIFARE_Transceive(byte *sendData, byte sendLen, bool acceptTimeout = false);
 	// old function used too much memory, now name moved to flash; if you need char, copy from flash to memory
 	//const char *GetStatusCodeName(byte code);
-	const __FlashStringHelper *GetStatusCodeName(byte code);
+	const char *GetStatusCodeName(byte code);
 	byte PICC_GetType(byte sak);
 	// old function used too much memory, now name moved to flash; if you need char, copy from flash to memory
 	//const char *PICC_GetTypeName(byte type);
-	const __FlashStringHelper *PICC_GetTypeName(byte type);
+	const char *PICC_GetTypeName(byte type);
 
 	// Support functions for debuging
 	void PCD_DumpVersionToSerial();
